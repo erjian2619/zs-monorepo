@@ -11,8 +11,7 @@
   "author": "",
   "license": "ISC",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
