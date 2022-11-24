@@ -1,0 +1,27 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "preversion": "changeset",
+    "version": "changeset version && pnpm install --no-frozen-lockfile && pnpm run format:code",
+    "release": "pnpm run clean && pnpm run build:packages && changeset publish",
+    "release:nobuild": "changeset publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@changesets/cli": "^2.25.2",
+    "react": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:erjian2619/zs-monorepo.git"
+  }
+}
