@@ -23,5 +23,9 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:erjian2619/zs-monorepo.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

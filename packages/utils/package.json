@@ -1,6 +1,6 @@
 {
-  "name": "@zs/utils",
-  "version": "1.0.0",
+  "name": "@zs-jill/utils",
+  "version": "1.0.1",
   "description": "",
   "main": "src/index.js",
   "scripts": {
@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
