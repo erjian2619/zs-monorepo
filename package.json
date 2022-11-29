@@ -9,7 +9,9 @@
     "preversion": "changeset",
     "version": "changeset version && pnpm install --no-frozen-lockfile && pnpm run format:code",
     "release": "pnpm run clean && pnpm run build:packages && changeset publish",
-    "release:nobuild": "changeset publish"
+    "release:nobuild": "changeset publish",
+    "build:packages": "pnpm run --filter \"./packages/**\" -r --parallel build",
+    "build:components": "pnpm run --filter \"./packages/components\" -r --parallel build"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +21,30 @@
     "apps/*"
   ],
   "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.14.5",
     "@changesets/cli": "^2.25.2",
+    "@types/react": "^18.0.25",
+    "autoprefixer": "^10.4.13",
+    "autoprefixer-loader": "^3.2.0",
+    "babel-loader": "^9.1.0",
+    "compression-webpack-plugin": "^10.0.0",
+    "css-loader": "^6.7.2",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "style-loader": "^3.3.1",
+    "typescript": "^4.3.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
   },
   "repository": {
     "type": "git",

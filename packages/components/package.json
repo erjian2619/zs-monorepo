@@ -1,0 +1,33 @@
+{
+  "name": "@zs-jill/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.min.js",
+  "types": "index.d.ts",
+  "typings": "types/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src",
+    "types",
+    "CHANGELOG.md",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "pnpm run clean && webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "antd": "^5.0.1"
+  }
+}
